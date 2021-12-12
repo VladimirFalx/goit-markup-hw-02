@@ -168,8 +168,8 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
-.navigation ul,
-.header-contacts ul,
+.navigation li,
+.header-contacts li,
 .benefits ul,
 .skills ul,
 .team ul,
