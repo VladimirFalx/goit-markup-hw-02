@@ -1,6 +1,6 @@
 body {
   font-family: "roboto", sans-serif;
-  color: #212121;
+  --main-color: #212121;
 }
 .logo {
   font-family: "raleway";
@@ -11,12 +11,18 @@ body {
   letter-spacing: 0.03em;
   color: #2196f3;
 }
+.logo .header-logo-ender {
+  color: var(--main-color);
+}
+.logo .footer-logo-ender {
+  color: #ffffff;
+}
 .navigation a {
   font-weight: 500;
   font-size: 14px;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--main-color);
 }
 .navigation a:hover,
 .navigation a:focus {
@@ -81,14 +87,13 @@ body {
   color: #ffffff;
   background: #2196f3;
   padding: 10px 32px;
-  border: hidden;
+  border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 .main button:hover,
 .main button:focus {
-  background-color: #f5f4fa;
-  color: #2196f3;
+  background-color: #188ce8;
 }
 
 .benefits h3 {
@@ -96,7 +101,7 @@ body {
   line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: #212121;
+  color: var(--main-color);
 }
 .benefits p {
   font-size: 14px;
@@ -110,7 +115,7 @@ body {
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 .team h3 {
   font-weight: 500;
@@ -118,7 +123,7 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
 }
 .team p {
   font-size: 16px;
@@ -133,7 +138,7 @@ body {
   line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #212121;
+  color: var(--main-color);
   background: #f5f4fa;
   padding: 6px 22px;
   border: hidden;
@@ -147,7 +152,7 @@ body {
 }
 
 .works h3 {
-  font-size: 18;
+  font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: #212121;
