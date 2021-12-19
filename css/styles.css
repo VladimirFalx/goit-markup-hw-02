@@ -1,9 +1,15 @@
-body {
-  font-family: "roboto", sans-serif;
+:root {
   --main-color: #212121;
   --accent-color: #2196f3;
+  --white-color: #ffffff;
+  --text-color: #757575;
+  --background-color: #2f303a;
 }
-.logo {
+body {
+  font-family: "roboto", sans-serif;
+}
+.main-logo,
+.down-logo {
   font-family: "raleway";
   font-style: normal;
   font-weight: 700;
@@ -12,11 +18,11 @@ body {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
-.logo .header-logo-ender {
+.main-logo span {
   color: var(--main-color);
 }
-.logo .footer-logo-ender {
-  color: #ffffff;
+.down-logo span {
+  color: var(--white-color);
 }
 .navigation a {
   font-weight: 500;
@@ -35,7 +41,7 @@ body {
   font-weight: 500;
   line-height: calc(16 / 14);
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--text-color);
 }
 .header-contacts a:hover,
 .header-contacts a:focus {
@@ -43,14 +49,14 @@ body {
 }
 .footer {
   /*цвет сделал, чтоб видеть шрифт элемента*/
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .footer-contacts span {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer-contacts a {
   font-style: normal;
@@ -68,7 +74,7 @@ body {
 }
 .main {
   /*цвет сделал, чтоб видеть шрифт элемента*/
-  background-color: #2f303a;
+  background-color: var(--background-color);
 }
 .main h1 {
   font-weight: 900;
@@ -77,7 +83,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .main button {
   font-weight: 700;
@@ -85,7 +91,7 @@ body {
   line-height: calc(30 / 16);
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-color);
   background: var(--accent-color);
   padding: 10px 32px;
   border: none;
@@ -108,7 +114,7 @@ body {
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 .skills h2,
 .team h2 {
@@ -131,7 +137,7 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
 .buttons button {
   font-weight: 500;
@@ -149,22 +155,23 @@ body {
 .buttons button:hover,
 .buttons button:focus {
   background: var(--accent-color);
-  color: #ffffff;
+  color: var(--white-color);
 }
 
 .works h3 {
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--main-color);
 }
 .works p {
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--text-color);
 }
-.logo,
+.main-logo,
+.down-logo,
 .navigation a,
 .header-contacts a,
 .footer-contacts span,
@@ -187,6 +194,7 @@ body {
   height: 1px;
   overflow: hidden;
   margin: 0;
+  padding: 0;
   opacity: 0;
   margin-top: -1;
 }
